@@ -5,12 +5,76 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/main2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:orientation="horizontal">
 
+        <LinearLayout
+            android:id="@+id/main3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+            <EditText
+                android:id="@+id/nazwa"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:hint="Podaj nazwę..."
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/skladniki"
+                android:textSize="15sp"
+                android:hint="Podaj składniki..."
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/temperatura"
+                android:textSize="15sp"
+                android:hint="Podaj tempertaturę..."
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/czas_pieczenia"
+                android:textSize="15sp"
+                android:hint="Podaj czas..."
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="10dp">
+                <Button
+                    android:id="@+id/dodaj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Dodaj"/>
+                <Button
+                    android:id="@+id/edytuj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Edytuj"/>
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

@@ -63,5 +63,16 @@ public class Wypieki {
         this.temperatura = temperatura;
         this.czas_pieczenia = czas_pieczenia;
     }
+
+    @Override
+    public String toString() {
+        return "Wypieki{" +
+                "id=" + id +
+                ", nazwa='" + nazwa + '\'' +
+                ", skladniki='" + skladniki + '\'' +
+                ", temperatura=" + temperatura +
+                ", czas_pieczenia=" + czas_pieczenia +
+                '}';
+    }
 }
 
