@@ -13,7 +13,7 @@ public class Wypieki {
     @ColumnInfo(name = "tempertaura pieczenia")
     private int temperatura;
     @ColumnInfo(name = "czas pieczenia")
-    private int czas;
+    private int czas_pieczenia;
 
     public int getId() {
         return id;
@@ -24,11 +24,11 @@ public class Wypieki {
     }
 
     public int getCzas() {
-        return czas;
+        return czas_pieczenia;
     }
 
     public void setCzas(int czas) {
-        this.czas = czas;
+        this.czas_pieczenia = czas;
     }
 
     public int getTemperatura() {
@@ -55,12 +55,12 @@ public class Wypieki {
         this.nazwa = nazwa;
     }
 
-    public Wypieki(String nazwa, String skladniki, int temperatura, int czas) {
+    public Wypieki(String nazwa, String skladniki, int temperatura, int czas_pieczenia) {
         id = 0;
         this.nazwa = nazwa;
         this.skladniki = skladniki;
         this.temperatura = temperatura;
-        this.czas = czas;
+        this.czas_pieczenia = czas_pieczenia;
     }
 }
 
