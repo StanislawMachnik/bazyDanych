@@ -23,16 +23,17 @@ public class Wypieki {
         this.id = id;
     }
 
-    public int getCzas() {
-        return czas_pieczenia;
-    }
-
-    public void setCzas(int czas) {
-        this.czas_pieczenia = czas;
-    }
 
     public int getTemperatura() {
         return temperatura;
+    }
+
+    public int getCzas_pieczenia() {
+        return czas_pieczenia;
+    }
+
+    public void setCzas_pieczenia(int czas_pieczenia) {
+        this.czas_pieczenia = czas_pieczenia;
     }
 
     public void setTemperatura(int temperatura) {
